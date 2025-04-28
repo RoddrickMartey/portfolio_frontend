@@ -12,7 +12,7 @@ const groupByCategory = (techStacks) => {
   }, {});
 };
 
-function TechStacksSection({ techStacks }) {
+function TechStackSection({ techStacks }) {
   const groupedTechStacks = groupByCategory(techStacks);
 
   return (
@@ -39,4 +39,4 @@ function TechStacksSection({ techStacks }) {
   );
 }
 
-export default TechStacksSection;
+export default TechStackSection;

@@ -6,8 +6,8 @@ import axiosInstance from "../../app/axiosConfig";
 import { FiExternalLink } from "react-icons/fi";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import TechStacksSection from "./techStacksSection";
 import CommentSection from "./CommentSection";
+import TechStackSection from "./TechStackSection";
 
 function ProjectDetails() {
   const { id } = useParams();
@@ -162,7 +162,7 @@ function ProjectDetails() {
           Last updated: {formattedDate}
         </p>
       </div>
-      <TechStacksSection techStacks={techStacks} />
+      <TechStackSection techStacks={techStacks} />
       <CommentSection comments={comments} createComment={mutation.mutate} />
     </section>
   );
